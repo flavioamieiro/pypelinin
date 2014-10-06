@@ -60,7 +60,7 @@ def get_process_info(process_id):
             'resident memory': memory_info.rss,
             'virtual memory': memory_info.vms,
             'pid': process.pid,
-            'started at': process.create_time,}
+            'started at': process.create_time(),}
 
 
 if __name__ == '__main__':
